@@ -11,7 +11,7 @@ In this lab you will create:
 The Terraform `main.tf` will do a few things:
 - Use the `azurerm_kubernetes_cluster` Terraform resource to AKS Cluster 
 - Use the `azurerm_role_assignment` Terraform resource to create the two neccessary role assignments 
-- Use the `uksouth` region, but feel free to change that if you'd like
+- Use the `northeurope` region, but feel free to change that if you'd like
 
 2. Create the bucket by running the following:
 - `terraform init` - To initialize the working directory and pull down the provider

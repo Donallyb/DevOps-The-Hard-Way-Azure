@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "devopstamops-rg"
-    storage_account_name = "devopstamopssa"
+    storage_account_name = "donaldevopssa"
     container_name       = "tfstate"
     key                  = "aks-terraform.tfstate"
   }
@@ -109,7 +109,7 @@ resource "azurerm_role_assignment" "node_infrastructure_update_scale_set" {
 }
 
 data "azurerm_container_registry" "example" {
-  name                = "${var.name}acr"
+  name                = "${var.name}donallybacr"
   resource_group_name = data.azurerm_resource_group.resource_group.name
 }
 
